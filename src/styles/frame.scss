@@ -1,0 +1,28 @@
+.mgf-frame {
+    position: relative;
+    width: 100%;
+}
+
+.mgf-frame__loader {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+.mgf-frame__body {
+    border: none;
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+
+    &--loaded {
+        opacity: 1;
+    }
+}

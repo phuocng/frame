@@ -1,0 +1,32 @@
+:root {
+    --mgf-spinner-size: 2rem;
+    --mgf-spinner-border-color: #b2b2b2;
+}
+
+.mgf-spinner {
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid var(--mgf-spinner-border-color);
+    border-top: 2px solid var(--mgf-spinner-border-color);
+
+    border-radius: 9999px;
+
+    height: var(--mgf-spinner-size);
+    width: var(--mgf-spinner-size);
+
+    &--animating {
+        animation-duration: 0.4s;
+        animation-name: mgf-spinner-transform;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes mgf-spinner-transform {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
