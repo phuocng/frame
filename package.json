@@ -30,7 +30,7 @@
         "js": "cp src/index.d.ts lib && cp dist/index.js lib && rollup -c rollup.config.js",
         "css": "sass --no-source-map src/styles/index.scss lib/styles/index.temp.css && postcss lib/styles/index.temp.css > lib/styles/index.css && rm -rf lib/styles/index.temp.css",
         "format": "prettier --write \"**/*.+(css|js|jsx|md|scss|ts|tsx)\"",
-        "release": "npm publish from-package"
+        "release": "npm run build && npm publish --access public"
     },
     "devDependencies": {
         "@rollup/plugin-typescript": "^8.2.5",
