@@ -1,0 +1,56 @@
+{
+    "name": "@1milligram/frame",
+    "version": "1.0.0",
+    "description": "An iframe wrapper that resizes based on its content automatically",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:1milligram/frame.git"
+    },
+    "author": {
+        "name": "Nguyen Huu Phuoc",
+        "email": "me@phuoc.ng",
+        "url": "https://twitter.com/nghuuphuoc"
+    },
+    "keywords": [
+        "react components",
+        "frame wrapper"
+    ],
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
+        "lib/cjs/*.*",
+        "lib/styles/*.*",
+        "lib/index.d.ts",
+        "lib/index.js"
+    ],
+    "scripts": {
+        "clean": "rm -rf lib && mkdir lib",
+        "build": "npm run clean && npm run js && npm run css",
+        "js": "cp src/index.d.ts lib && cp dist/index.js lib && rollup -c rollup.config.js",
+        "css": "sass --no-source-map src/styles/index.scss lib/styles/index.temp.css && postcss lib/styles/index.temp.css > lib/styles/index.css && rm -rf lib/styles/index.temp.css",
+        "format": "prettier --write \"**/*.+(css|js|jsx|md|scss|ts|tsx)\"",
+        "release": "npm publish from-package"
+    },
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^8.2.5",
+        "@types/react": "^17.0.19",
+        "@types/react-dom": "^17.0.9",
+        "cssnano": "^5.0.8",
+        "postcss": "^8.3.6",
+        "postcss-cli": "^8.3.1",
+        "postcss-import": "^14.0.2",
+        "prettier": "^2.3.2",
+        "react": "^16.8.0 || ^17.0.2",
+        "react-dom": "^16.8.0 || ^17.0.2",
+        "rollup": "^2.56.3",
+        "rollup-plugin-terser": "^7.0.2",
+        "sass": "^1.39.0",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.3"
+    },
+    "peerDependencies": {
+        "react": "^16.8.0 || ^17.0.0",
+        "react-dom": "^16.8.0 || ^17.0.0"
+    }
+}
