@@ -49,11 +49,6 @@ const io = new ResizeObserver(entries => {
 io.observe(document.body);`);
         doc.documentElement.appendChild(script);
 
-        const link = doc.createElement('link');
-        link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('href', '/assets/demo.css');
-        doc.head.appendChild(link);
-
         // Fit the frame
         updateHeight();
     };

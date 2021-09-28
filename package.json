@@ -1,6 +1,6 @@
 {
     "name": "@1milligram/frame",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "An iframe wrapper that resizes based on its content automatically",
     "license": "MIT",
     "repository": {
