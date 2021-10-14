@@ -9,7 +9,7 @@ Due to the cross domain (CORS) issue, it only supports `iframe` whose `src` belo
 
 This components have been used in some 1milligram's products such as [FormValidation](https://formvalidation.io)
 
-https://raw.githubusercontent.com/1milligram/frame/main/assets/form-validation-demo.mp4
+![Demo](https://raw.githubusercontent.com/1milligram/frame/main/assets/form-validation-demo.gif)
 
 ### Usage
 
