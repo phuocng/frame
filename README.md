@@ -7,7 +7,7 @@ A React component that wraps an `iframe` inside an element:
 
 Due to the cross domain (CORS) issue, it only supports `iframe` whose `src` belongs to the same domain of your site.
 
-This components have been used in some 1milligram's products such as [FormValidation](https://formvalidation.io)
+This component has been used in some 1milligram's products such as [FormValidation](https://formvalidation.io)
 
 ![Demo](https://raw.githubusercontent.com/1milligram/frame/main/assets/form-validation-demo.gif)
 
